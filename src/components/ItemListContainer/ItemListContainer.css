@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+h1{
+    font-family: Roboto;
+    color: var(--color-principal);
+}

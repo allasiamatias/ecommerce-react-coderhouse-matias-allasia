@@ -1,0 +1,16 @@
+*{
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root{
+  --color-principal:#02587a;
+  --color-secundario:#24efef;
+  --color-terciario:#d7d8d8;
+  --color-body:#ebe6d9;
+}
+
+body{
+  background-color: var(--color-body);
+}

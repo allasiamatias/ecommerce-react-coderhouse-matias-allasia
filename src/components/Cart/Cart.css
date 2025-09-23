@@ -1,0 +1,6 @@
+.carrito{
+    color:var(--color-secundario);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
