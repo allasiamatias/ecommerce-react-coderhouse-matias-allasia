@@ -1,0 +1,48 @@
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.item-imagen{
+    height: 8rem;
+    width:2.5rem;
+    margin: 2rem;    
+}
+
+.item-titulo{
+    font-family: Roboto;
+    color: var(--color-principal);
+    font-size: 1.4rem;
+    padding-bottom:1rem;
+}
+
+.item-precio{
+    font-family: Roboto;
+    font-size: 1rem;
+}
+
+.detalle{
+    margin-top: auto;
+    display: flex;
+    justify-items: center;
+}
+
+.detalle button{
+    background-color: var(--color-principal);
+    color: var(--color-terciario);
+    padding: .8rem 2rem ;
+    font-family: Roboto;
+    margin-top: 2rem;
+    border-radius: 25px;
+    border: solid 1px var(--color-principal);
+    cursor: pointer;
+    transition: background-color .2s, color .2s;
+}
+
+.detalle button:hover{
+    background-color: var(--color-body); 
+    color: var(--color-principal);
+}
+

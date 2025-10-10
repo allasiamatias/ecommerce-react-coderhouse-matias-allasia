@@ -1,0 +1,57 @@
+.item-contador{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.item-contador-buttons{
+    margin:1rem;
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.item-contador-buttons button{
+    border: solid 1px var(--color-principal);
+    border-radius: 2rem;
+    background-color: var(--color-body);
+    width: 2rem;
+    font-family: Roboto;
+    cursor: pointer;
+    transition: background-color .2s, color .2s;
+}
+
+.item-contador-buttons button:hover{
+    background-color: var(--color-principal); 
+    color: var(--color-body);
+}
+
+.item-contador-numero{
+    font-family: Roboto;
+}
+
+.item-contador-limite{
+    font-family: Roboto;
+    color: rgba(178, 185, 182, 0.871);
+    font-size: .8rem;
+}
+
+.item-contador-agregar button{
+    background-color: var(--color-principal);
+    color: var(--color-terciario);
+    padding: .8rem 2rem ;
+    font-family: Roboto;
+    margin-top: .7rem;
+    border-radius: 25px;
+    border: solid 1px var(--color-principal);
+    cursor: pointer;
+    transition: background-color .2s, color .2s;
+}
+
+.item-contador-agregar button:hover{
+    background-color: var(--color-body); 
+    color: var(--color-principal);
+}
+

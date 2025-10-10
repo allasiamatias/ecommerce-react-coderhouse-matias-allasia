@@ -1,21 +1,26 @@
 import CartWidget from "../Cart/Cart"
 import'./Navbar.css'
+import { Link } from "react-router";
 
 function Navbar(){
     return(
         <>
             <nav className="barra-navegacion">
                 <div>
-                    <h3 className="logo">La Bodega</h3>
+                    <Link to="/" >
+                        <h3 className="logo">La Bodega</h3>
+                    </Link>
                 </div>
                 <div>
                     <ul className="enlaces">
-                        <a href="/">Todos los Productos</a>
-                        <a href="/">Vinos</a>
-                        <a href="/">Cervezas</a>
-                        <a href="/">Destilados</a>
-                        <CartWidget />
+                        <Link to="/">Todos los Productos</Link>
+                        <Link to="/categoria/vinos">Vinos</Link>
+                        <Link to="/categoria/cervezas">Cervezas</Link>
+                        <Link to="/categoria/destilados">Destilados</Link>
                     </ul>
+                </div>
+                <div className="carrito">
+                    <CartWidget />
                 </div>
             </nav>
         </>

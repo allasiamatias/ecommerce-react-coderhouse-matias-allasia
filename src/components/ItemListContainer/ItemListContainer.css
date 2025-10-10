@@ -1,11 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-.container{
+.greeting{
     display: flex;
-    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 2rem;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 h1{
     font-family: Roboto;
     color: var(--color-principal);
+}
+
+h2{
+    font-family: Roboto;
+    color: var(--color-principal);
+}
+.contenedor-productos{
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    gap: .8rem;
+}
+
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30dvh;
 }

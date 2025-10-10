@@ -8,6 +8,8 @@
     padding: 1rem;
     background-color:var(--color-principal);
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 .logo{
@@ -19,8 +21,9 @@
 
 .enlaces{
     display: flex;
-    gap: 2rem; 
+    gap: 3rem; 
     font-family: Roboto;
+    text-align: end;
 }
 a{
     text-decoration: none;

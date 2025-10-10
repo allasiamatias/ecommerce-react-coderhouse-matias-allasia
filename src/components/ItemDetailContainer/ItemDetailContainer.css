@@ -1,0 +1,41 @@
+.item-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 3rem;
+    margin: 8rem;
+}
+
+.item-card-details{
+    display: flex;
+    gap:3.5rem;
+}
+
+.item-card-img img{
+    height:15rem;
+}
+
+.item-card-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.item-card-txt-precio{
+    font-family: Roboto;
+    margin: 2rem 0;
+}
+.item-card-txt-descripcion{
+    font-family: Roboto;    
+    width: 65%;
+    text-align: center;
+    font-weight: 300;
+}
+
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30dvh;
+}
