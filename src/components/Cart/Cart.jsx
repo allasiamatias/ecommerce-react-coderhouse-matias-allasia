@@ -1,5 +1,5 @@
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart"
-import './cart.css'
+import './Cart.css'
 import { useContext } from "react"
 import  cartContext  from "../../context/cartContext"
 import { Link } from "react-router"
