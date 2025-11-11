@@ -1,12 +1,12 @@
 import './ItemListContainer.css'
 import Item from '../Item/Item.jsx';
-import getData, { getProductByCategory } from '../../data/mockAPIService.js';
 import { useState,useEffect } from 'react';
 import { useParams } from 'react-router';
 import { RiseLoader } from 'react-spinners';
+import getData, { getProductByCategory } from '../../data/FirestoreService.js'
 
 function ItemListContainer(props){
-    
+
     const [productos, setProductos] = useState([])
     const {catParam} = useParams()
     const [loading,setLoading] = useState(true)

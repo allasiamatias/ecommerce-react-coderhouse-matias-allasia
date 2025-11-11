@@ -1,10 +1,13 @@
+import  cartContext  from "../../context/cartContext"
 import "./ItemCounter.css"
-import{useState} from "react"
+import{ useContext, useState} from "react"
 
 function ItemCounter(props){
-    const [count, setCount] = useState(0)
+    const [count, setCount] = useState(1)
     const [limit, setLimit] = useState(false)
     const maxValue = props.stock 
+
+    const { addItem } = useContext(cartContext)
 
     function sumar(){
         if(count < maxValue){
@@ -13,6 +16,7 @@ function ItemCounter(props){
             setLimit (true)
         }
     }
+    
     function restar(){
         if(count > 0){
             setCount(count-1) 
@@ -22,7 +26,8 @@ function ItemCounter(props){
 
     function agregarAlCarrito(){
         if (count >= 1){
-            setCount(0)
+            addItem({ ...props.producto, quantity: count})
+            setCount(1)
         }
     }
 

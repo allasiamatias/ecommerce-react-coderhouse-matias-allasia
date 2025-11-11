@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import ItemCounter from "../ItemCounter/ItemCounter"
 import { useParams } from "react-router"
-import { getProductById } from "../../data/mockAPIService"
+import { getProductById } from "../../data/FirestoreService"
 import './ItemDetailContainer.css'
 import { RiseLoader } from "react-spinners"
 
@@ -32,7 +32,7 @@ function ItemDetailContainer(){
                     <h2 className="item-card-txt-titulo"> {itemData.titulo} </h2>
                     <h4 className="item-card-txt-precio"> $ {itemData.precio} </h4>
                     <p className="item-card-txt-descripcion"> {itemData.descripcion} </p>
-                    <ItemCounter stock={itemData.stock} />
+                    <ItemCounter stock={itemData.stock} producto={itemData}/>
                 </div>
             </div>}
         </div>

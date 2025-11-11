@@ -1,0 +1,50 @@
+.cart-container{
+    padding: 2rem;
+}
+
+.cart-container h1{
+    margin-bottom: 2rem;
+}
+
+.cart-container h3{
+    color: var(--color-principal);
+    font-size: 2rem;
+}
+
+.cart-total{
+    max-width: 90%;
+    display: flex;
+    justify-content: end;
+    margin-top: 1rem;
+}
+
+.buttons-cart{
+    display: flex;
+    justify-content: end;
+    max-width: 90%;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.confirm-button{
+    background-color: var(--color-principal);
+    color: var(--color-terciario);
+    border: none;
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: background-color .2s, color .2s;
+}
+
+.confirm-button:hover{
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+}
+
+.clear-button{
+    background-color: var(--color-terciario);
+    color: var(--color-principal);
+    border: none;
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}

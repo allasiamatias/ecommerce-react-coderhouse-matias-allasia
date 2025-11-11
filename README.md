@@ -1,12 +1,24 @@
-# React + Vite
+# Ecommerce React CoderHouse Allasia Matias
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+El proyecto se trata de una SPA de un local de bebidas, donde se trabaja la carga de los productos desde firestore, se incluye navegacion entre las distintas categorias usando react-router.
 
-Currently, two official plugins are available:
+Puede realizarse todo el proceso de agregar productos al carrito y modificar el mismo, eliminando productos o vaciarlo completo. Ademas se realiza la carga de la orden de compra mediante un formulario a firebase.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Como usar
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Para clonar y correr la app, deberas tener instalados git y Node.js en tu computadora.
+
+En la terminal de tu editor deberas:
+
+````bash
+#Clonar el repositorio
+$ git clone (git@github.com:allasiamatias/ecommerce-react-coderhouse-matias-allasia.git)
+
+#Instalar dependencias
+$ npm install
+
+# Correr la app
+$ npm run dev
+
+````
