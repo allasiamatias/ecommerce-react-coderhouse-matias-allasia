@@ -22,3 +22,7 @@ $ npm install
 $ npm run dev
 
 ````
+
+## Link a ecommerce
+
+https://labodegareact.vercel.app/
